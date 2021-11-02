@@ -3,7 +3,7 @@ import { Pharmacy } from "../src/pharmacy";
 
 describe("Herbal Tea", () => {
   describe("expiresIn", () => {
-    it("Should descrease by 1 everyday", () => {
+    it("Should decrease by 1 everyday", () => {
       const pharmacy = new Pharmacy([new Drug("Herbal Tea", 10, 10)]);
       const drugsAfterADay = pharmacy.updateBenefitValue();
       for (const drugToTest of drugsAfterADay) {

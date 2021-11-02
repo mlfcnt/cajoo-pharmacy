@@ -3,7 +3,7 @@ import { Pharmacy } from "../src/pharmacy";
 
 describe("Ferfex", () => {
   describe("expiresIn", () => {
-    it("Should descrease by 1 everyday", () => {
+    it("Should decrease by 1 everyday", () => {
       const pharmacy = new Pharmacy([new Drug("Fervex", 10, 10)]);
       const [drugAfterADay] = pharmacy.updateBenefitValue();
       expect(drugAfterADay.expiresIn).toEqual(9);
