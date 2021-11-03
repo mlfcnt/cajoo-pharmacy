@@ -3,13 +3,15 @@
       "jest": true,
       "node": true
     },
-    "parser": "babel-eslint",
+    "parser": "@typescript-eslint/parser",
     "extends": [
       "eslint:recommended",
-      "plugin:prettier/recommended"
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
     ],
     "plugins": [
-      "prettier"
+      "prettier",
+      "@typescript-eslint"
     ],
     "rules": {
       "prettier/prettier": "error"
