@@ -1,7 +1,7 @@
 import { Drug } from "../src/Drug";
 import { Pharmacy } from "../src/pharmacy";
 
-describe("Ferfex", () => {
+describe("Fervex", () => {
   describe("expiresIn", () => {
     it("Should decrease by 1 everyday", () => {
       const pharmacy = new Pharmacy([new Drug("Fervex", 10, 10)]);
